@@ -1,0 +1,364 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+footer .footer-right .footer-company-about h2, footer .footer-links h2, .hero-left h2, .hero-left h1, #exterior h1, #interior h1 {
+  font-family: "Inter";
+  color: #252a34;
+}
+
+.hero-left p, #exterior p, #interior p {
+  color: #37393c;
+  font-size: 17px;
+}
+
+#cars-area button, .hero-left button {
+  padding: 10px 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#exterior, #interior {
+  height: 50vh;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+  align-items: center;
+  justify-content: center;
+}
+#exterior h1, #interior h1 {
+  color: white;
+}
+#exterior p, #interior p {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 300;
+  max-width: 500px;
+  color: white;
+}
+#exterior button, #interior button {
+  border-radius: 0;
+  background-color: transparent;
+  border: 1px solid white;
+  transition: background-color 0.4s;
+  color: white;
+  padding: 15px 40px;
+}
+#exterior button:hover, #interior button:hover {
+  background-color: white;
+  color: black;
+  transition: all 0.4s;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  mix-blend-mode: darken;
+}
+
+body {
+  background-color: #eaeaea;
+  font-family: "Poppins";
+  overflow-x: hidden;
+}
+
+header {
+  width: 92%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header img {
+  width: 100px;
+  display: inline-block;
+}
+header nav {
+  display: flex;
+  align-items: center;
+}
+header nav a {
+  text-decoration: none;
+  color: #252a34;
+}
+header nav a:hover {
+  color: crimson;
+  transition: all 0.5s;
+}
+header #nav-left {
+  display: flex;
+}
+header #nav-left a {
+  padding: 0 20px;
+  border-right: 1px solid gray;
+}
+header #nav-left a:last-child {
+  border-right: none;
+}
+@media (max-width: 800px) {
+  header #nav-left .nav-left-content {
+    display: none;
+  }
+}
+header #nav-right {
+  display: flex;
+  font-size: 15px;
+}
+header #nav-right .nav-right-content a {
+  padding: 0 5px;
+}
+@media (max-width: 800px) {
+  header #nav-right .nav-right-content {
+    display: none;
+  }
+}
+@media (min-width: 800px) and (max-width: 1400px) {
+  header #nav-right .nav-right-content {
+    display: none;
+  }
+}
+header #nav-right .menu {
+  font-size: 25px;
+  display: none;
+}
+@media (max-width: 800px) {
+  header #nav-right .menu {
+    display: block;
+  }
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 100px;
+  background: linear-gradient(rgb(215, 215, 215) 40%, #eaeaea 40%);
+}
+@media (max-width: 800px) {
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 40px;
+  }
+}
+@media (min-width: 800px) and (max-width: 1400px) {
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+  }
+}
+.hero .active {
+  margin-top: 100vh;
+}
+
+.hero-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  max-width: 500px;
+}
+@media (max-width: 800px) {
+  .hero-left {
+    gap: 20px;
+  }
+}
+.hero-left h1 {
+  font-size: 40px;
+  text-align: center;
+}
+@media (max-width: 800px) {
+  .hero-left h1 {
+    text-align: center;
+  }
+}
+@media (min-width: 800px) and (max-width: 1400px) {
+  .hero-left h1 {
+    text-align: center;
+  }
+}
+@media (min-width: 800px) and (max-width: 1400px) {
+  .hero-left p {
+    text-align: center;
+  }
+}
+.hero-left img {
+  width: 200px;
+}
+.hero-left button {
+  background-color: crimson;
+}
+.hero-left button:hover {
+  background-color: rgb(168, 16, 46);
+  transition: all 0.4s;
+}
+
+.hero-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+.hero-right-banner {
+  max-width: 800px;
+}
+@media (min-width: 800px) and (max-width: 1400px) {
+  .hero-right-banner {
+    max-width: 500px;
+  }
+}
+.hero-right-track {
+  max-width: 400px;
+}
+.hero-right p {
+  max-width: 500px;
+  text-align: center;
+}
+
+#interior {
+  background-image: radial-gradient(rgba(0, 0, 0, 0.3), black), url("/images/interior.jpg");
+}
+#interior p {
+  font-size: 17px;
+}
+@media (max-width: 800px) {
+  #interior p {
+    font-size: 15px;
+  }
+}
+
+#exterior {
+  background-image: radial-gradient(rgba(0, 0, 0, 0.3), black), url("/images/exterior-4.jpg");
+}
+#exterior p {
+  font-size: 17px;
+}
+@media (max-width: 800px) {
+  #exterior p {
+    font-size: 15px;
+  }
+}
+
+#cars-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px 0;
+}
+#cars-area .cars {
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 800px) {
+  #cars-area .cars {
+    flex-direction: column;
+  }
+}
+#cars-area .cars img {
+  width: 300px;
+}
+#cars-area .cars h3 {
+  text-align: center;
+}
+#cars-area .cars .card:last-child img {
+  width: 270px;
+  padding-left: 20px;
+}
+#cars-area button {
+  background-color: aqua;
+  margin-top: 50px;
+}
+#cars-area button:hover {
+  background-color: rgb(0, 180, 180);
+}
+@media (max-width: 800px) {
+  #cars-area button {
+    margin-right: 23px;
+  }
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #252a34;
+  color: white;
+  padding: 50px;
+}
+@media (max-width: 800px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: start;
+  }
+}
+footer img {
+  width: 60px;
+  height: 100px;
+  mix-blend-mode: unset;
+}
+footer .footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+@media (max-width: 800px) {
+  footer .footer-links {
+    align-items: center;
+  }
+}
+footer .footer-links h2 {
+  color: white;
+}
+footer .footer-links a {
+  color: white;
+  text-decoration: none;
+}
+footer .footer-right {
+  width: 33.3%;
+  display: flex;
+  flex-direction: column;
+  margin-top: -25px;
+  gap: 30px;
+}
+@media (max-width: 800px) {
+  footer .footer-right {
+    text-align: center;
+    align-items: center;
+  }
+}
+footer .footer-right .footer-company-about {
+  margin-top: 35px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+@media (max-width: 800px) {
+  footer .footer-right .footer-company-about {
+    gap: 20px;
+  }
+}
+footer .footer-right .footer-company-about h2 {
+  color: white;
+}
+footer .footer-right .footer-icons {
+  display: flex;
+  gap: 30px;
+}
+footer .footer-right .footer-icons .bi {
+  color: white;
+  font-size: 30px;
+}
+footer .footer-right .footer-icons .bi:hover {
+  color: gray;
+  transition: all 0.3s;
+}/*# sourceMappingURL=style.css.map */
